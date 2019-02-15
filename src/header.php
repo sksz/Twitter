@@ -1,19 +1,5 @@
 <?php
 require_once('include.php');
-
-$userEmail = 'aaa@onet.pl';
-$userPassword = 'haslo';
-
-$loggeduser = Auth::user($userEmail, $userPassword);
-
-if (PHP_SESSION_NONE === session_status()) {
-    session_start([
-        'cookie_lifetime' => 5 * 60,
-    ]);
-} else {
-    $_SESSION["userName"] = $user->getName();
-}
-
 ?>
 
 <!doctype html>
