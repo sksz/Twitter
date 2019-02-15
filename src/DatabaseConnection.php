@@ -3,7 +3,6 @@
 require_once('Config.php');
 
 global $conn;
-
 $conn = null;
 
 try {
@@ -15,6 +14,6 @@ try {
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         ]
     );
-} catch (PDOException $e) {
+} catch (PDOException $exception) {
     die('Wystąpił błąd połączenia do bazy danych');
 }
