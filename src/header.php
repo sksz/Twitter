@@ -1,3 +1,7 @@
+<?php
+require_once('include.php');
+?>
+
 <!doctype html>
 <html lang="en">
 <head>

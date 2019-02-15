@@ -1,8 +1,12 @@
 <?php
 
-include('header.php');
+include('./header.php');
 
-echo 'test';
+$testUser = new User();
+$testUser->setEmail('test1@wp.pl')->setHashPass('haslo')->setUserName('user1');
+$testUser->saveToDB($conn);
 
-include('footer.php');
+var_dump($testUser);
+
+include('./footer.php');
 
